@@ -1,0 +1,24 @@
+<!-- {% if event %}
+	<ul>
+		{% for event in event %}
+			<li>{{event.description}}</li>
+		{% endfor%}
+	</ul>
+
+{% else %}
+	<p> No Event are available.</p>
+{% endif %} -->
+
+
+
+{% if event %}
+	<ul>
+		{% for event in event %}
+			<li><a href="{{event.id}}/">{{event.description}}<a></li>
+
+		{% endfor%}
+	</ul>
+
+{% else %}
+	<p> No people are available.</p>
+{% endif %}

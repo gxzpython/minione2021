@@ -1,0 +1,11 @@
+{% if people_detailview %}
+	<ul>
+	<li>{{people_detailview.about_me}}</li>
+	<li>{{people_detailview.username}}</li>
+	<li>{{people_detailview.fav_movies}}</li>
+
+	</ul>
+
+{% else %}
+	<p> No people are available.</p>
+{% endif %}

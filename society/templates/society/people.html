@@ -1,0 +1,11 @@
+{% if people %}
+	<ul>
+		{% for people in people %}
+			<li><a href="{{people.id}}/">{{people.about_me}}<a></li>
+
+		{% endfor%}
+	</ul>
+
+{% else %}
+	<p> No people are available.</p>
+{% endif %}

@@ -1,0 +1,20 @@
+<h1>For user login</h1>
+
+
+<form action =" {% url 'society:success' %}" method = "post">
+	{% csrf_token %}
+	<!-- Username -->
+
+	<label for="username"> Username: </label><br> <!--  <br> means break to a new line -->
+	<input type="text" name="user_name"> <br>
+
+	<!-- Password -->
+
+    <label for = "details">Password: </label><br>
+    <input type="password" name = "pass_word"><br>
+
+
+    <input type="submit" name="submit" value = login>
+
+
+</form>

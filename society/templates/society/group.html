@@ -1,0 +1,25 @@
+<!-- <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Group</title>
+
+  </head>
+  <body>
+
+    <p>hello This is Group </p>
+
+  </body>
+</html> -->
+
+{% if group %}
+	<ul>
+		{% for group in group %}
+    <li><a href="{{group.id}}">{{group.name}}<a></li>
+
+		{% endfor%}
+	</ul>
+
+{% else %}
+	<p> No Group are available.</p>
+{% endif %}

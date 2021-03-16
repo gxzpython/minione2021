@@ -1,0 +1,13 @@
+{% if event_detailview %}
+	<ul>
+	<li>{{event_detailview.description}}</li>
+	<li>{{event_detailview.event_title}}</li>
+	<li>{{event_detailview.start_time}}</li>
+	<li>{{event_detailview.end_time}}</li>
+	
+	</ul>
+
+{% else %}
+	<p> No event are available.</p>
+{% endif %}
+
